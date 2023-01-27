@@ -19,5 +19,10 @@ $(function(){
     $('.close').on('click', function(){
         clearForm();
         closePopup();
+	   $('.close').on('click', function(){
+        clearForm();   
+    let clearForm = function(){
+        $('.popup-container > input[type="text"]').val('');
+        closePopup();
     });
 });
